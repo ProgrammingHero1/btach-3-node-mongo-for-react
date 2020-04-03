@@ -15,9 +15,6 @@ const uri = process.env.DB_PATH;
 let client = new MongoClient(uri, { useNewUrlParser: true });
 const users = ["Asad", 'Moin', 'Sabed', 'Susmita', 'Sohana', 'Sabana'];
 
-app.get('/test', (req, res) => {
-    res.send('Welcome to my Hero Hero ku ku ');
-})
 
 app.get('/products', (req, res) =>{
     client = new MongoClient(uri, { useNewUrlParser: true });
